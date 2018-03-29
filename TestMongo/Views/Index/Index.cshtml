@@ -1,0 +1,18 @@
+﻿@using TestMongo.Models;
+
+@model List<Usuario>
+
+    @{
+        ViewBag.Title = "Index";
+    }
+
+    <h2>Index</h2>
+
+<div class="form-group">
+<div class="form-control">
+    @Model.First().name
+</div>
+<div class="form-control">
+    @Model.First().age
+</div>
+</div>
